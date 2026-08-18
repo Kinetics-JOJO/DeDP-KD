@@ -10,7 +10,12 @@ Official implementation of prompt-based knowledge distillation for BraTS brain t
 - **Dual-prompt design**: shared *general* prompts capture modality-agnostic knowledge, while per-subset *expert* prompts encode subset-specific adaptation.
 - **Multiple backbones**: VNet, UNETR, and Swin-UNETR (MONAI implementations, optional pretrained weights).
 - **Teacher-student distillation**: Dice + CE segmentation loss combined with temperature-scaled KL distillation from a full-modality teacher.
+- 
+## 📌 Pipeline Overview
+![Pipeline](img/2_overall framework.png)
 
+## 📌 Dual Prompt Injection mechanism
+![Dual Prompt](img/3_Prompt injection.png)
 ## Repository Structure
 
 ```
@@ -63,6 +68,7 @@ data/
 ├── train_list.txt        # one case_id per line
 ├── val_list.txt
 └── test_list.txt
+├── brats2018/brats2015
 ```
 
 Modality indices used throughout the code: `T1=0, T2=1, T1ce=2, FLAIR=3`. Subsets can be specified by name (`"T1+T2"`, case-insensitive) or by index (`"0,1"`).
