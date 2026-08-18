@@ -8,14 +8,15 @@ Official implementation of prompt-based knowledge distillation for BraTS brain t
   - **Unified training** (`--training_mode unified`): a single student handles all 15 non-empty modality subsets. Each batch randomly samples a subset, missing channels are zero-filled, and all expert prompt pools are optimized jointly.
   - **Separate training** (`--training_mode per_subset`): one specialist student per fixed modality subset, following the classical missing-modality distillation setup.
 - **Dual-prompt design**: shared *general* prompts capture modality-agnostic knowledge, while per-subset *expert* prompts encode subset-specific adaptation.
+## 📌 Dual Prompt Injection mechanism
+![Dual Prompt](img/Promptinjection.png)
 - **Multiple backbones**: VNet, UNETR, and Swin-UNETR (MONAI implementations, optional pretrained weights).
 - **Teacher-student distillation**: Dice + CE segmentation loss combined with temperature-scaled KL distillation from a full-modality teacher.
-- 
 ## 📌 Pipeline Overview
 ![Pipeline](img/overallframework.png)
 
-## 📌 Dual Prompt Injection mechanism
-![Dual Prompt](img/Promptinjection.png)
+
+
 
 ## Repository Structure
 
