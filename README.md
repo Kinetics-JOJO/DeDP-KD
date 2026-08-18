@@ -12,10 +12,11 @@ Official implementation of prompt-based knowledge distillation for BraTS brain t
 - **Teacher-student distillation**: Dice + CE segmentation loss combined with temperature-scaled KL distillation from a full-modality teacher.
 - 
 ## 📌 Pipeline Overview
-![Pipeline](img/2_overall framework.png)
+![Pipeline](img/2_overall_framework.png)
 
 ## 📌 Dual Prompt Injection mechanism
-![Dual Prompt](img/3_Prompt injection.png)
+![Dual Prompt](img/3_Prompt_injection.png)
+
 ## Repository Structure
 
 ```
