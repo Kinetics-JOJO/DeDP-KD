@@ -1,5 +1,4 @@
-# DeDP-KD: Decoupled Dual Prompting and KnowledgeDistillation for Medical Segmentation with Missing Modality
-
+# Decoupled prompting for glioma segmentation with missing MRI sequences（DeDP-KD）
 Official implementation of prompt-based knowledge distillation for BraTS brain tumor segmentation with missing modalities. A full-modality teacher transfers knowledge to a prompt-conditioned student that operates on arbitrary subsets of the four MRI modalities (T1, T2, T1ce, FLAIR).
 
 ## Highlights
